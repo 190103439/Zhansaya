@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Castoro:ital@1&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+        <div class="form-box">
+          <h2>Online Order</h2>
+        <form id="order" class="input-group">
+          <input type="text" class="input-field" placeholder="Name Surname" required>
+          <input type="text" class="input-field" placeholder="Address" required>
+          <input type="tel" class="input-field" placeholder="Phone number" required>
+            <p>Select cake you want to order:</p>
+            <select name="cake" id="select" required>
+            <option value="1">Esterhazy</option>
+            <option value="2">Milfey</option>
+            <option value="3">Pistacio cake</option>
+            <option value="4">Napoleon</option>
+            <option value="5">Snickers cake</option>
+            <option value="6">Pigeon milk</option>
+            <option value="7">Strawberry cake</option>
+            <option value="8">Cheesecake</option>
+          </select>
+          <button type="submit" onclick="alert('Thank you!Your order is accepted,the courier will contact you.')" class="submit-btn">Buy</button>
+        </form>
+      </div>
+    <script src="script.js">
+    </script>
+</body>
+</html>

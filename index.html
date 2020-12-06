@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Texturina:wght@100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">    
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar-nav {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Create four equal columns */
+.nav-item {
+  flex: 25%;
+  padding: 20px;
+}
+
+/* On screens that are 992px wide or less, go from four columns to two columns */
+@media screen and (max-width: 992px) {
+  .nav-item {
+    flex: 50%;
+  }
+}
+
+/* On screens that are 600px wide or less, make the columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .navbar-nav {
+    flex-direction: nav-item;
+  }
+}
+    body {
+        position: relative; 
+        background-color: rgb(248, 248, 248);
+        color: black;
+        text-align: center;
+        overflow: auto;
+       }
+    h1{
+      font-family: 'Texturina', serif;
+      margin-bottom: 40px;
+      color: rgb(241, 122, 11);
+    }
+    p{
+      margin-top: 45px;
+      font-family: 'Dancing Script', cursive;
+      font-size: 30px;
+      color: rgb(54, 51, 51);
+    }
+    #map {
+      width: 100%;
+      height: 100%; 
+      padding: 0;
+      margin: 0;
+        }
+    #googleMap{
+      margin: 0 auto;
+        }
+    </style>
+  <body data-spy="scroll" data-target=".navbar" data-offset="50"> 
+  <nav class="navbar navbar-expand-sm bg-light navbar-light fixed-top"> 
+    <a class="navbar-brand" href="#">
+    <img src="logo1.png" alt="Logo" style="width:100px;">
+  </a> 
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#home">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#aboutUs">About us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#shop">Shop</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#online">Online Order</a>
+      </li>
+    </ul>
+  </nav>
+  <div id="home" class="container-fluid" style="padding-top:70px;">
+     <img src="https://avatars.mds.yandex.net/get-zen_doc/1712630/pub_5e4e6be78c0a1879703eeaf3_5e4e6d47a5d3230c1ce7c1e8/scale_1200" alt="">
+     <h1>Welcome to our pastry shop!</h1>
+    <p>“Cake is happiness! If you know the way of the cake, you know the way of happiness! If you have a cake in front of you, you should not look any further for joy!”</p>
+  </div>
+  <div id="aboutUs" class="container-fluid" style="padding-top:70px;">
+    <h1>Jansayas Sweets</h1>
+    <img src="https://ifranchisesingapore.com/wp-content/uploads/2016/11/La-Patisserie-Des-Reves-Boutique-2.jpg" alt="" width="1000px" height="600px">
+    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec facilisis varius feugiat. Ut et mi sed erat volutpat sodales in eget nisi. Mauris elementum et sapien eu gravida. Vivamus rutrum libero nunc, ut tincidunt tellus pretium at. Praesent et justo a enim egestas gravida vel nec leo. Aenean suscipit imperdiet faucibus. In nec sem vestibulum, euismod magna in, mollis tortor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam bibendum, est efficitur dignissim rutrum, ipsum nisi porta sem, at consectetur nibh nibh ac odio. Vivamus efficitur ac dolor ut sodales. Duis ornare sem sit amet felis varius molestie. Sed sagittis gravida purus, mollis ultricies justo ultrices id.</p>
+  </div>
+  <div id="shop" class="container-fluid" style="padding-top:70px;">
+    <div id="demo" class="carousel slide" data-ride="carousel">
+      <!-- Indicators -->
+      <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+        <li data-target="#demo" data-slide-to="3"></li>
+        <li data-target="#demo" data-slide-to="4"></li>
+        <li data-target="#demo" data-slide-to="5"></li>
+      </ul>
+      
+      <!-- The slideshow -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://www.afisha.ru/uploads/a/fa/afa797f6ad704e009161e81f8edb46cf.JPG" width="1000" height="600">
+        </div>
+        <div class="carousel-item">
+          <img src="https://4kw.in/wp-content/uploads/2020/04/Dessert-4K-Wallpaper-2048x1152.jpg" width="1000" height="600">
+        </div>
+        <div class="carousel-item">
+          <img src="https://privozilka.su/upload/iblock/d76/chizkeyk_nyu_york.jpg" width="1000" height="600">
+        </div>
+        <div class="carousel-item">
+          <img src="https://techabby.com/images/vanilla-sponge-cake-with-strawberry-meringue-buttercream-102934733_horiz.jpg" width="1000" height="600">
+        </div>
+        <div class="carousel-item">
+          <img src="https://www.koolinar.ru/all_image/recipes/155/155140/recipe_0a079d81-182c-43ba-8fc8-4f797b9100be.jpg" width="1000" height="600">
+        </div>
+        <div class="carousel-item">
+          <img src="https://static.tildacdn.com/tild3566-3034-4238-b139-343236366336/AAM_9956_aleksandr_a.jpg" width="1000" height="600">
+        </div>
+      </div>
+      
+      <!-- Left and right controls -->
+      <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#demo" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+    <p>“My favourite food is cake.
+        What kind of cake?
+        It doesn't matter. All cake.”</p>
+     <div class="button" style="margin-top: 40px;">
+         <button class="btn btn-outline-dark"><a href="input.html" style="color: black;">Buy now!</a></button>
+        </div>
+  </div>
+  <div id="online" class="container-fluid" style="padding-top:70px;">
+    <h1>Online Order</h1> 
+    <img src="https://d1e676vce0x2at.cloudfront.net/uploads/post/image/11025/main_momoconfeitaria_deboragabrich-50.jpg" alt="" width="1000px" height="600px">
+    <p>Gourmet Cake Delivery. The most scrumptious cakes online - and you can send them for delivery nationwide! Bake Me A Wish is the most reliable cake delivery service online - we guarantee on-time delivery. Each delicious mail order cake is delivered in an elegant gift box with a greeting card matching your occasion.</p>
+  </div>
+  <div id="googleMap" style="width:60%;height:400px;"></div>
+  <script src="script.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCnMj8Xc5_jA0tqVHCoFHCk-2sHt4imItA&callback=myMap"></script>
+   <div id="contacts" class="container-fluid bg-dark" style="padding-top:10px;padding-bottom:20px" > 
+    <p style="color: rgb(255, 255, 255); font-size: 25px;">CONTACTS</p>
+    <hr>
+    <p style="color: white; font-size: 25px;">+7 701 701 07 07</p>
+    <p style="color: white; font-size: 25px;">Opening Hours</p>
+    <p style="color: white; font-size: 25px;">Monday-Friday : 8AM - 10PM</p>
+    <p style="color: white; font-size: 25px;">Saturday-Sunday : 10AM - 8PM</p>
+    <p style="color: white; font-size: 25px;">For any questions please contact us at e-mail : jansayas_sweets@gmail.com</p>
+  </div>
+  </body>
+  </html>
+  
